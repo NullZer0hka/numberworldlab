@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Reactive Changes | Leadership Through Psychophysiological Mastery</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -33,7 +30,7 @@
             },
         }
     </script>
-<style>
+<style type="text/tailwindcss">
         body {
             font-family: 'Manrope', sans-serif;
         }
@@ -42,29 +39,57 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .contact-btn-hover {
+            @apply transition-all duration-300 hover:scale-110 hover:shadow-lg active:scale-95;
+        }
+        .header-icon {
+            @apply flex items-center justify-center w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-custom dark:text-white shadow-sm border border-slate-200 dark:border-white/5 contact-btn-hover;
+        }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-custom dark:text-slate-50 min-h-screen">
-<!-- Top Navigation -->
+<body class="bg-background-light dark:bg-background-dark text-slate-custom dark:text-slate-50 min-h-screen relative">
 <header class="sticky top-0 z-50 w-full border-b border-solid border-[#e7ecf3] dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
 <div class="max-w-[1280px] mx-auto px-6 lg:px-20 py-4 flex items-center justify-between">
-<div class="flex items-center gap-3 text-primary">
-<div class="size-8">
-<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center">
+<svg class="w-full h-full text-slate-custom dark:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 5 L5 15 C5 15 5 100 50 115 C95 100 95 15 95 15 L50 5 Z" fill="none" stroke="currentColor" stroke-width="4"></path>
+<line stroke="currentColor" stroke-width="4" x1="50" x2="50" y1="5" y2="115"></line>
+<line stroke="currentColor" stroke-width="4" x1="5" x2="95" y1="55" y2="55"></line>
+<path d="M22 45 L28 25 L34 45 M25 38 L31 38" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M65 25 L85 25 M70 25 L70 45 M80 25 L80 45" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M20 85 C20 75 40 75 40 85 C40 95 20 95 20 85" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M25 85 L35 85" stroke="currentColor" stroke-width="1"></path>
+<path d="M75 65 L85 75 L75 85 L65 75 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<circle cx="75" cy="75" fill="currentColor" r="2"></circle>
 </svg>
 </div>
-<h2 class="text-slate-custom dark:text-white text-xl font-extrabold tracking-tight">REACTIVE CHANGES</h2>
+<h2 class="text-slate-custom dark:text-white text-lg font-bold tracking-tight">REACTIVE CHANGES</h2>
 </div>
-<div class="hidden md:flex items-center gap-10">
+<div class="hidden md:flex items-center gap-8">
 <nav class="flex items-center gap-8">
 <a class="text-slate-custom dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#method">Method</a>
 <a class="text-slate-custom dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#programs">Programs</a>
 <a class="text-slate-custom dark:text-slate-300 text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
 </nav>
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md shadow-primary/20">
-                    Book a Consultation
-                </button>
+<div class="flex items-center gap-2 ml-2 pr-4 border-r border-slate-200 dark:border-slate-700">
+<a class="header-icon" href="#" title="WhatsApp">
+<svg class="w-4 h-4 fill-current" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</a>
+<a class="header-icon" href="#" title="Telegram">
+<svg class="w-4 h-4 fill-current" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.944 0C5.346 0 0 5.346 0 11.944s5.346 11.944 11.944 11.944 11.944-5.346 11.944-11.944S18.542 0 11.944 0zm5.206 8.19l-1.781 8.39c-.134.603-.491.75-.994.468l-2.715-1.999-1.309 1.26c-.144.144-.266.266-.546.266l.195-2.766 5.035-4.547c.219-.195-.048-.304-.337-.11l-6.224 3.918-2.68-.838c-.583-.182-.594-.583.121-.862l10.468-4.034c.485-.182.909.11.797.862z"></path>
+</svg>
+</a>
+<a class="header-icon" href="mailto:contact@reactivechanges.com" title="Email">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+</a>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg text-sm font-bold transition-all shadow-md shadow-primary/20">
+                Book a Consultation
+            </button>
 </div>
 <button class="md:hidden text-slate-custom dark:text-white">
 <span class="material-symbols-outlined">menu</span>
@@ -72,62 +97,59 @@
 </div>
 </header>
 <main>
-<!-- Hero Section -->
 <section class="max-w-[1280px] mx-auto px-6 lg:px-20 py-16 md:py-24">
 <div class="flex flex-col lg:flex-row items-center gap-12">
 <div class="flex-1 flex flex-col gap-8">
 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
 <span class="material-symbols-outlined text-sm">psychology</span>
-                        Science-Based Precision
-                    </div>
+                    Science-Based Precision
+                </div>
 <div class="flex flex-col gap-4">
 <h1 class="text-slate-custom dark:text-white text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight">
-                            Manage Yourself to <span class="text-primary">Manage Others.</span>
+                        Manage Yourself to <span class="text-primary">Manage Others.</span>
 </h1>
 <p class="text-slate-custom/70 dark:text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-xl">
-                            The science of leadership through psychophysiological mastery. Bridging the gap between clinical precision and executive performance.
-                        </p>
+                        The science of leadership through psychophysiological mastery. Bridging the gap between clinical precision and executive performance.
+                    </p>
 </div>
 <div class="flex flex-col sm:flex-row gap-4 pt-4">
 <button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-base font-bold transition-all shadow-lg shadow-primary/30">
-                            Book a Consultation
-                        </button>
+                        Book a Consultation
+                    </button>
 <button class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 text-slate-custom dark:text-white px-8 py-4 rounded-xl text-base font-bold transition-all">
-                            View the Method
-                        </button>
+                        View the Method
+                    </button>
 </div>
 </div>
 <div class="flex-1 w-full relative">
 <div class="absolute -top-4 -right-4 w-24 h-24 bg-accent-gold/20 rounded-full blur-3xl"></div>
 <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
-<div class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-2xl shadow-2xl relative z-10" data-alt="Modern architectural lines with calm blue sky" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3arn0Sq7qkH6zxg3Bn9lcsKyi-cHrxyQm0NL9C69f6tWy-rhuw8C1Os3MzcWFqVpAM8zNwqkmP4aX-vBs1n4lnaCnUmulEp70yyeRy0bnK-lbHL868DUEDsCld9DV4hJKS3mBfmrsc-_2VxUIyXik2FHY77m3aHQMocZx4aF9p96vue7UhQcE3o2VGqVp7TWNeRuTTIkRbbnSThSrgjv2qs19lT0J9_eXm23WWi-0-UXQRJhNi3GfB1kAidi4_36ULlOEtBhZ9Uny");'>
+<div class="w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-2xl shadow-2xl relative z-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCNIwQ-5it8SGmWFgN1use2_fj9U9e7j_48XgE6EiX06YgJy5JCeoQGjf9am2jD9NRI8r8u9FwWTAhW7JO2WOzZOrKsXQNx1TyyXzgjtJ8Qw-JfraZWH6mzODauAHFaLrz1S0qy4RIM_0TWBsGU1FtUbnztAln8z0W2BWtis_Hw18OatFC6VfXHDTwkvXFr6I4gtgzR814X2fIGdGUHWPtAMfyHJPwfbfewsY4TMu_vnjxfoW_QlxD97P1DbWZLGoPPmEm5l_t9MzLm");'>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-custom/40 to-transparent rounded-2xl"></div>
 </div>
 </div>
 </div>
 </section>
-<!-- About the Method Section -->
 <section class="bg-white dark:bg-background-dark py-20 border-y border-slate-100 dark:border-slate-800" id="method">
 <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
 <div class="flex flex-col gap-12">
 <div class="flex flex-col md:flex-row justify-between items-end gap-6">
 <div class="flex flex-col gap-4 max-w-2xl">
 <h2 class="text-slate-custom dark:text-white text-3xl md:text-5xl font-black leading-tight">
-                                About the <span class="gold-gradient-text">Method</span>
+                            About the <span class="gold-gradient-text">Method</span>
 </h2>
 <p class="text-slate-custom/70 dark:text-slate-400 text-lg leading-relaxed">
-                                Our psychophysiological approach helps leaders master their internal state to transform their external impact. We combine neuro-feedback with executive coaching.
-                            </p>
+                            Our psychophysiological approach helps leaders master their internal state to transform their external impact. We combine neuro-feedback with executive coaching.
+                        </p>
 </div>
 <button class="bg-primary/10 hover:bg-primary/20 text-primary px-6 py-3 rounded-lg text-sm font-bold transition-all flex items-center gap-2">
-                            Explore Scientific Papers
-                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        Explore Scientific Papers
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </button>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Feature 1 -->
 <div class="group flex flex-col gap-6 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all hover:shadow-xl dark:bg-slate-900/50">
-<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-inner" data-alt="Close up of neural patterns abstract" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbwFXt7xCbqcwsl-s58zSMOA0Zf9ClIto0gZzD23VXxloc8uUkwizyMIeXseY5UAsMooAkQBdvMgSEdKEapt44gzJB5cWXaKT0o7XtbqmsSpVQForJNLc2yNSnK58h_iFEeAm_IxwWllrP6e_oWq5in9ckqwgZKoDoUPhXl2lL38QA-nXD4wWZ_1eFd_Fat3ze3rO0ZZtRGtcHpsA4TZlqorvpxDp79mi7A9_l9vL-wjDOaTiQajf5mfqag105ZWK8cCVIaRNpWiLh");'>
+<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-inner" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2itvingt2spQYK4bB1Ma-woa3koNsmxaII0C-UuBJg-rhBm6MmfHJwum6YEo2OtqRBFscnLUOBHozM6SxwoHsiJzAg8SQHKkg-XZe0AQsuZhVAwdHMww8fVb6a_mHFNK9uxzD7oZA7arkP17p11PYouNasXnQl4U42dEzuGGFr0hG9FIPmpV0DUxcJXzY0lrDbuKfZRnNRYgZ0qVOJYRxd9qHfmB-U3mgMHXKhqYcOV-jrInw91vvZZVLzy-xCApqekeAxgUnlRRE");'>
 </div>
 <div class="flex flex-col gap-2">
 <div class="flex items-center gap-2 text-accent-gold">
@@ -136,13 +158,12 @@
 </div>
 <h3 class="text-slate-custom dark:text-white text-xl font-bold">Scientific Accuracy</h3>
 <p class="text-slate-custom/60 dark:text-slate-400 text-sm leading-relaxed">
-                                    Advanced biometric assessments provide data-driven insights into your real-time cognitive load and physiological stress responses.
-                                </p>
+                                Advanced biometric assessments provide data-driven insights into your real-time cognitive load and physiological stress responses.
+                            </p>
 </div>
 </div>
-<!-- Feature 2 -->
 <div class="group flex flex-col gap-6 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all hover:shadow-xl dark:bg-slate-900/50">
-<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-inner" data-alt="Calm water ripples abstract" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOFL7yDQqSzRRCjdcXnui8AXZgg_kIU1HTGtcPx-CvvntryQFcdx8PKCguVhPpF5eLylmnYCciclCp9AfmhwHv6W9fXj9dub216MCIUFYFc_A8W1Kjz4g3I734fdjLJUY_Z_CMcjNbw4u5YJQU7RpDik-oRN_JOTGgsG8cTOaakuxSNwTZC2E18Ikt2DCVRhX5kxYMv9pnQoTaEmgPfCq3sFORPqc1HQ2mp5-ttfttCLjRoAd0yTnONe3i28RiF6KfNXK5vj-I-hfg");'>
+<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-inner" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAR3wxzBPBdTucN41gxgkOmBBx4nTWDoT9aVMGD_GhrAJs9ruQGEGKzWLh_2d3mgI0OmlwHKiPJJkbTfyHDpY1PK0LoDyZ08ByozT3xxiTxLmmnxph6d0c88FyKFP_G9pk_mGRND8QEsvD5IhTkeuKSgWqznoZxQxM_OMUuoj_AaYbZREt6p4HGEYemYes2HnIF6AWYdTXwoJihhGrS3CwikyrLc6NAOVjf6-sZz91vJO4iXRYh8Tv0RIbhNSObrcW6J2YXk9sFJMh_");'>
 </div>
 <div class="flex flex-col gap-2">
 <div class="flex items-center gap-2 text-accent-gold">
@@ -151,13 +172,12 @@
 </div>
 <h3 class="text-slate-custom dark:text-white text-xl font-bold">Behavioral Control</h3>
 <p class="text-slate-custom/60 dark:text-slate-400 text-sm leading-relaxed">
-                                    Restructuring reactive patterns through deliberate practice, allowing for superior decision-making under intense pressure.
-                                </p>
+                                Restructuring reactive patterns through deliberate practice, allowing for superior decision-making under intense pressure.
+                            </p>
 </div>
 </div>
-<!-- Feature 3 -->
 <div class="group flex flex-col gap-6 p-8 rounded-2xl border border-slate-100 dark:border-slate-800 hover:border-primary/30 transition-all hover:shadow-xl dark:bg-slate-900/50">
-<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-inner" data-alt="Abstract geometric glass building" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPeNWC8XcrCsxhIEx-q63fihgC33s7gTf61zgDAJ9SDOUxv_w0UP2R_zSFiSBlR5HKUeTMUkDpRlJSz0J0mQ_uWxTv8uLU-J52qrcn4wkOyqH8nDfX5Hc8cbxYNNFnOMuNsjsqgiLIXN6Ek7prKNw2Oqg-8MOsxMKlWYpFLPTaV-Qm0e9GtTIohZEqaruLq1PZa-lR9S-rV3RveXzQ7kvhRDTrReb843kEHd06gMD1a2onSqPfEXuNh9RfMhb1H93UBMTWc9MAf0-G");'>
+<div class="w-full aspect-video bg-center bg-no-repeat bg-cover rounded-xl overflow-hidden shadow-inner" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVqNxbhRayD0Ystic8gfiMLTUBTI5p4ZgAKJZsnLrzmXbW6uo5pRJ8dLZ_LTy5q7BBH0aNf2l2-eHiNszoWcsj8Sdwm204M0MeSR1IAcMTI2fZFfpS_lLZpLxNADuHE82kaob50rT_TRR9pj3bD0ZfjG-gy_pb5AW7wBIbYQcVufjQcIGq3tbcoCtCx6VC_2NzxC-MFSQ8zZ2rTY-FioaZLAqEw3Mxkm1hLbpuboTbUQF4ZUkvRQL0kQCIw6HAjjQ3B8W9z7qK-kRS");'>
 </div>
 <div class="flex flex-col gap-2">
 <div class="flex items-center gap-2 text-accent-gold">
@@ -166,79 +186,74 @@
 </div>
 <h3 class="text-slate-custom dark:text-white text-xl font-bold">Neurological Stability</h3>
 <p class="text-slate-custom/60 dark:text-slate-400 text-sm leading-relaxed">
-                                    Long-term cognitive resilience built through consistent physiological regulation and neurological restructuring.
-                                </p>
+                                Long-term cognitive resilience built through consistent physiological regulation and neurological restructuring.
+                            </p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Programs Grid Section -->
 <section class="py-24 bg-background-light dark:bg-background-dark/50" id="programs">
 <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
 <div class="text-center flex flex-col items-center gap-4 mb-16">
 <h2 class="text-slate-custom dark:text-white text-4xl font-black tracking-tight">Executive Programs</h2>
 <div class="w-20 h-1 bg-accent-gold rounded-full"></div>
 <p class="text-slate-custom/60 dark:text-slate-400 max-w-2xl text-lg">
-                        Tailored interventions designed for the unique demands of modern leadership.
-                    </p>
+                    Tailored interventions designed for the unique demands of modern leadership.
+                </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Card 1 -->
 <div class="group bg-white dark:bg-slate-900 p-2 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" data-alt="Zen stones balanced on water" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0C773ZH95w16576owhr1OimdEjdbmTy749KbS55EpxY-Vyn2RFeTnC0mH-NM2OG14sHDQjE9qeVEyJkD7AE4fKkn2Z-B1h0-dwUchy77umH1h8hE8287ysuxf6UfTHoQCpbuUEOe1GRVVlkkwGRVTLvOHjd8ooVkj4OWJQ0ljA2FM9TTaUV5JX2yj7l0WgKsc2vNK9oU-0K697UN6IcyWpv5pJc_zfsWuSWQ5DXx0WC11kHlCDDoiD6_WQ003T8qGsYiLxskp3E3O");'>
+<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuBxk0O6m2FggYPZGX6y7EA_WZzL_0oIaxU6ym96eFf3iuUjX_MVKpQ1xaAkDuRn_qPtFuQEEGalMGmerYURhAEHiJ4Nc4NGD1JYUZlJwcfl3jWTHbzKJjVw5ap-Gf2OkZKPbz7SCGKZe0ZpE2Iprz5d9vRDrA5HJztHnMdFtT6Ua9ITruqxo8OFnwYssb3msX3uezqlxFGFTV6IgCBAuPl_FjtVcuW65RT_RQBnX3ouiZaDTvL5FuRk3JZVuA-ibOQb24tusT5yvS");'>
 </div>
 <div class="p-4 flex flex-col gap-2">
 <h3 class="text-slate-custom dark:text-white text-lg font-bold">Mental Check-up</h3>
 <p class="text-slate-custom/60 dark:text-slate-400 text-sm leading-snug">
-                                Rapid assessment of current cognitive load and leadership readiness.
-                            </p>
+                            Rapid assessment of current cognitive load and leadership readiness.
+                        </p>
 <div class="mt-4 pt-4 border-t border-slate-50 dark:border-slate-800 flex justify-between items-center">
 <span class="text-primary font-bold text-sm">Learn More</span>
 <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
 </div>
 </div>
 </div>
-<!-- Card 2 -->
 <div class="group bg-white dark:bg-slate-900 p-2 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" data-alt="Deep blue light in mountain landscape" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDx-2nqH2AUM614a3C_WprweI572iaoKFWm86VN08Y8J43twf7i1B9QxRRL8Kt3v79BqUfkS_w-lfdn476lDV39TDn4diJ2JsChtTLrpkhy4xOdqAkNpbxhqr5desdyeVig6hJyMJNnKymnHMjabwJt96jwcH64nt2c5ixQmA3xeosKAk5NKp9Bj0IuzdISq_jncg_P1jc61rVcTV9BBkyDKZXRu29ZejR2H-rB7kx1RNbD-GiyJF44K7i_Lvzwyju9SRfBX8mfEUfk");'>
+<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtkX6QsSC3OQpYvaOgd4Nfz1i7Ez0I6xb67gGJ-a2h_noYt-5KacmrWOcXQC8gaqQ39XZvL7lKiQ90gN2p_38sR0F-pI3JqhJGVvBCAQPh4b2ljzBfmTyNKHP6oUuPOE9N5Gr2mJU79vmaxBtPM6H3A7mRJHTAXd5QDdtqvRNpy_f-NujTetmj2hh8ULuHkKE8dmjLclL1H28L4Jg-oPrZJaYptIFMbDIrtYfS0dzLymjT6Pq-iClHmQvoLvqAULd1W9mssj1TI8KO");'>
 </div>
 <div class="p-4 flex flex-col gap-2">
 <h3 class="text-slate-custom dark:text-white text-lg font-bold">Psychological Intensive</h3>
 <p class="text-slate-custom/60 dark:text-slate-400 text-sm leading-snug">
-                                Focused intervention for high-stress scenarios and complex transitions.
-                            </p>
+                            Focused intervention for high-stress scenarios and complex transitions.
+                        </p>
 <div class="mt-4 pt-4 border-t border-slate-50 dark:border-slate-800 flex justify-between items-center">
 <span class="text-primary font-bold text-sm">Learn More</span>
 <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
 </div>
 </div>
 </div>
-<!-- Card 3 -->
 <div class="group bg-white dark:bg-slate-900 p-2 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" data-alt="Complex structural network or bridge" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAs5cNM5NLZra6iaafLAPnWA_bBbdGVC0Xv3dI-jc_bjlzYki0OwzqBwNrw0dHVhL9A6gqTXhWRCaW_7pdZKkHSqOKYMNTTxIojtfsDRuhq3Dj35P0EXz6vQyrTB3TGa8m5LxbZ7AG_5NmXH8UmxsPP5JKlX3LrgEj1EFzDFAZ6ImDTRgVaWcovoBoAfA5nsF6Bl2tksQwfKQ5ObeoCnekD7svdz9nyVb94_ua5poLGqjW0RZCkv-555hZLzc7dyGfrU02eRfkPbDy");'>
+<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCskBhGso6XED3auHC_mo-M_aj2Phw697f35IqxEg9Ee6UDOVHl9F6IP3GKkgxQCSXkxBPQfM1wACOuhGvTPJ8Q4yktzn313gZAKJ9Qdx_PpM3Xk_kHhK5ttRdxlSgA98BhUFQcFu45K_PqPa9zAmlCfOAFVIUmYyWtedfMpq-srQo3okAN9C7W7-g1ZKBT6LZ_reHbXYbd_mjNIHW8mD1HEYbmewgwCTSzeIiw7jmLHVGi56arNvyxVMQ9lAXB4HNBWjcn7LQMpzhx");'>
 </div>
 <div class="p-4 flex flex-col gap-2">
 <h3 class="text-slate-custom dark:text-white text-lg font-bold">Deep Corrective</h3>
 <p class="text-slate-custom/60 dark:text-slate-400 text-sm leading-snug">
-                                Long-term behavioral and neurological restructuring for lasting change.
-                            </p>
+                            Long-term behavioral and neurological restructuring for lasting change.
+                        </p>
 <div class="mt-4 pt-4 border-t border-slate-50 dark:border-slate-800 flex justify-between items-center">
 <span class="text-primary font-bold text-sm">Learn More</span>
 <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
 </div>
 </div>
 </div>
-<!-- Card 4 -->
 <div class="group bg-white dark:bg-slate-900 p-2 rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" data-alt="Interior of a minimalist luxury home" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGdtc_0X8ZRlhqvJ4P_AZkDplT8UM04JV_rLFikA8NTNLgIH7wi0qPdMhj9X1mMUIPuj_68HzH9vjKdoHO3oX49Cqs1BnkiQkcoGm0HAH7Zizdfn_2MG-QyWAJVuZnNyCtQeykoNM8oebdUnx7xtgGL_W3Ijuw2fcfQhFOGD2NJA79ByvN8t1r4FbQpocrGabkBVXEJCq80hIc7RdKfoDE_sZAxvBpuWlT-TvAsZ0A5YBUxuHlL2A0XswYUb3TlIS81ibkEH3HTdRi");'>
+<div class="aspect-square w-full bg-center bg-no-repeat bg-cover rounded-xl mb-4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTCTltRRwTx2si_yd6wPWjSVfhW1Naw3DGXKlkbsncpme4zrl1MQVYFNt2GKBoR8_HJGzqZRkHsb2ySCmZGI9KwQ15KvsUUxqH40MV2m4I_EGK1_F53rI4M9oSzejiI_Map4g8ieiX5RM2IrM_GyG2pTA6Q5wSJYhZRfgoLHM9yRVUvPwceBNJroyacygbWqO7W1Rsj4i8n_yUfYf3gd57TfVIc3JJZzkxKfPM-4syETEtCWvU_G3BomcbIp4dFuesll9pwfPoS3ki");'>
 </div>
 <div class="p-4 flex flex-col gap-2">
 <h3 class="text-slate-custom dark:text-white text-lg font-bold">Family Support</h3>
 <p class="text-slate-custom/60 dark:text-slate-400 text-sm leading-snug">
-                                Holistic leadership extending to the private and domestic sphere.
-                            </p>
+                            Holistic leadership extending to the private and domestic sphere.
+                        </p>
 <div class="mt-4 pt-4 border-t border-slate-50 dark:border-slate-800 flex justify-between items-center">
 <span class="text-primary font-bold text-sm">Learn More</span>
 <span class="material-symbols-outlined text-primary text-sm group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
@@ -248,42 +263,47 @@
 </div>
 </div>
 </section>
-<!-- Final Call to Action -->
 <section class="py-24">
 <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
 <div class="relative bg-slate-custom dark:bg-slate-900 rounded-[2rem] overflow-hidden p-10 md:p-20 flex flex-col items-center text-center gap-8">
-<div class="absolute inset-0 opacity-10 pointer-events-none" data-alt="Subtle geometric pattern background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTKuhEMnqnaQePT7AUeTClcm31GufchWkkR_6pQU3ydYn6uA8SCOSZom_qJmMP6nm1x_s55OvLyKQNrOSj_DVWtuyjsCtn_lmwGQOEULtyytXQ-YDTtdU5TSYrGEd30O1JWT4i2kgui5CuWC_abrN1SanOezXiYiHs4MbvNMZj0QN_8cVY3UTXW89ppGqlRGABwXSg_SY0jTN58_xZ8k0pk5hUu2sZ9fgS2BSoWbzj458a5WC4cnE1bmq4eAZGLykd013nkZqeB-nq");'></div>
+<div class="absolute inset-0 opacity-10 pointer-events-none" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuUsPzEAzPbpDR9GBFYUATi8ytxikz4mSoNyBBwY3beDK9leUjIHw-6X-VagzEs5iM2dWnbkClEjTPQrs4YjMpOXCFdqy3ER9jG-TR05MbvuvKSC5VYDWsIrMST3zG_kQTSusTQc8UaNRNFBh_stJySFRnosxBsLvJG-dZ81p1Y5-2SVX2br4XUz3awWRuOdUxcog1Hmx2_MrGIfFDUmFVht4biTteOirYtyftEXfxMuI5-yOUU5wjCZ1YSwHdHGPuz1g0bp5mVg7g");'></div>
 <h2 class="text-white text-4xl md:text-5xl font-black max-w-3xl leading-tight relative z-10">
-                        Ready to Transform Your Leadership Through <span class="gold-gradient-text">Precision Mastery?</span>
+                    Ready to Transform Your Leadership Through <span class="gold-gradient-text">Precision Mastery?</span>
 </h2>
 <p class="text-slate-400 text-lg md:text-xl max-w-xl relative z-10">
-                        Join elite executives who have mastered the art of biological self-regulation for peak performance.
-                    </p>
+                    Join elite executives who have mastered the art of biological self-regulation for peak performance.
+                </p>
 <div class="flex flex-col sm:flex-row gap-6 relative z-10">
 <button class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-xl text-lg font-bold transition-all shadow-xl shadow-primary/20">
-                            Book Your Consultation
-                        </button>
+                        Book Your Consultation
+                    </button>
 </div>
 </div>
 </div>
 </section>
 </main>
-<!-- Footer -->
 <footer class="bg-white dark:bg-background-dark border-t border-slate-100 dark:border-slate-800 py-16">
 <div class="max-w-[1280px] mx-auto px-6 lg:px-20">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
 <div class="col-span-1 md:col-span-2 flex flex-col gap-6">
-<div class="flex items-center gap-3 text-primary">
-<div class="size-6">
-<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill-rule="evenodd"></path>
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center">
+<svg class="w-full h-full text-slate-custom dark:text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+<path d="M50 5 L5 15 C5 15 5 100 50 115 C95 100 95 15 95 15 L50 5 Z" fill="none" stroke="currentColor" stroke-width="4"></path>
+<line stroke="currentColor" stroke-width="4" x1="50" x2="50" y1="5" y2="115"></line>
+<line stroke="currentColor" stroke-width="4" x1="5" x2="95" y1="55" y2="55"></line>
+<path d="M22 45 L28 25 L34 45 M25 38 L31 38" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M65 25 L85 25 M70 25 L70 45 M80 25 L80 45" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M20 85 C20 75 40 75 40 85 C40 95 20 95 20 85" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M75 65 L85 75 L75 85 L65 75 Z" fill="none" stroke="currentColor" stroke-width="2"></path>
+<circle cx="75" cy="75" fill="currentColor" r="2"></circle>
 </svg>
 </div>
-<h2 class="text-slate-custom dark:text-white text-lg font-extrabold tracking-tight">REACTIVE CHANGES</h2>
+<h2 class="text-slate-custom dark:text-white text-lg font-bold tracking-tight">REACTIVE CHANGES</h2>
 </div>
 <p class="text-slate-custom/50 dark:text-slate-500 text-sm leading-relaxed max-w-xs">
-                        Elevating executive performance through the convergence of clinical psychophysiology and high-level leadership coaching.
-                    </p>
+                    Elevating executive performance through the convergence of clinical psychophysiology and high-level leadership coaching.
+                </p>
 </div>
 <div class="flex flex-col gap-6">
 <h4 class="text-slate-custom dark:text-white font-bold text-sm uppercase tracking-widest">Navigation</h4>
@@ -294,18 +314,38 @@
 </nav>
 </div>
 <div class="flex flex-col gap-6">
-<h4 class="text-slate-custom dark:text-white font-bold text-sm uppercase tracking-widest">Connect</h4>
+<h4 class="text-slate-custom dark:text-white font-bold text-sm uppercase tracking-widest">Get in Touch</h4>
+<div class="flex flex-col gap-6">
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-custom dark:text-white contact-btn-hover group" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+</svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-custom dark:text-white contact-btn-hover group" href="#">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.944 0C5.346 0 0 5.346 0 11.944s5.346 11.944 11.944 11.944 11.944-5.346 11.944-11.944S18.542 0 11.944 0zm5.206 8.19l-1.781 8.39c-.134.603-.491.75-.994.468l-2.715-1.999-1.309 1.26c-.144.144-.266.266-.546.266l.195-2.766 5.035-4.547c.219-.195-.048-.304-.337-.11l-6.224 3.918-2.68-.838c-.583-.182-.594-.583.121-.862l10.468-4.034c.485-.182.909.11.797.862z"></path>
+</svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-custom dark:text-white contact-btn-hover group" href="mailto:contact@reactivechanges.com">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
 <nav class="flex flex-col gap-4">
-<a class="text-slate-custom/60 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">LinkedIn</a>
-<a class="text-slate-custom/60 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Contact</a>
-<a class="text-slate-custom/60 dark:text-slate-400 text-sm hover:text-primary transition-colors" href="#">Consultation</a>
+<a class="text-slate-custom/60 dark:text-slate-400 text-sm hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">language</span> LinkedIn
+                        </a>
+<a class="text-slate-custom/60 dark:text-slate-400 text-sm hover:text-primary transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">calendar_month</span> Book a Call
+                        </a>
 </nav>
+</div>
 </div>
 </div>
 <div class="mt-16 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
 <p class="text-slate-custom/40 dark:text-slate-500 text-xs uppercase tracking-widest font-medium">
-                    © 2024 Reactive Changes. All Rights Reserved.
-                </p>
+                © 2024 Reactive Changes. All Rights Reserved.
+            </p>
 <div class="flex gap-8">
 <a class="text-slate-custom/40 dark:text-slate-500 text-xs uppercase tracking-widest font-medium hover:text-primary" href="#">Privacy Policy</a>
 <a class="text-slate-custom/40 dark:text-slate-500 text-xs uppercase tracking-widest font-medium hover:text-primary" href="#">Terms of Service</a>
